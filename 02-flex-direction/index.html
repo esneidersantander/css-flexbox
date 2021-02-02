@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox css clase 1</title>
+    <style>
+        .container{
+            background-color: #333;
+            height: 30vh;
+            display: flex;
+            /*Establece el eje principal, definiendo así la dirección en que se 
+            colocan los elementos flexibles en el contenedor flexible.
+            row( predeterminado ): igual que la dirección del texto
+            row-reverse: opuesto a la dirección del texto
+            column: igual que rowpero de arriba a abajo
+            column-reverse: igual que de row-reversearriba a abajo*/
+            flex-direction: row;
+
+            /*Define si los elementos flexibles se fuerzan en una sola línea o 
+            pueden fluir en varias líneas. Si se establece en varias líneas, 
+            también define el eje transversal que determina la dirección en 
+            la que se apilan las nuevas líneas.
+            nowrap( predeterminado ): línea única que puede hacer que el contenedor se desborde
+            wrap: multilíneas, la dirección está definida por flex-direction
+            wrap-reverse: multilíneas, opuesto a la dirección definida por flex-direction*/
+            flex-wrap: nowrap;
+
+            /* flex-flow: column nowrap;  es un shortcut para flex direction y flex wrap el cual 
+            recibe dos argumentos */
+        }
+        .item{
+            border: medium solid #999;
+            width: 20%;
+            background-color: #666;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <article class="item">Flex Item 1</article>
+        <article class="item">Flex Item 2</article>
+        <article class="item">Flex Item 3</article>
+    </section>
+    <section class="container">
+        <article class="item">Flex Item 1</article>
+        <article class="item">Flex Item 2</article>
+        <article class="item">Flex Item 3</article>
+    </section>
+    <section class="container">
+        <article class="item">Flex Item 1</article>
+        <article class="item">Flex Item 2</article>
+        <article class="item">Flex Item 3</article>
+        <article class="item">Flex Item 4</article>
+        <article class="item">Flex Item 5</article>
+        <article class="item">Flex Item 6</article>
+        <article class="item">Flex Item 7</article>
+        <article class="item">Flex Item 8</article>
+        <article class="item">Flex Item 9</article>
+        <article class="item">Flex Item 10</article>
+        <article class="item">Flex Item 11</article>
+        <article class="item">Flex Item 12</article>
+        <article class="item">Flex Item 13</article>
+        <article class="item">Flex Item 14</article>
+        <article class="item">Flex Item 15</article>
+        <article class="item">Flex Item 16</article>
+        <article class="item">Flex Item 17</article>
+        <article class="item">Flex Item 18</article>
+    </section>
+</body>
+</html>
