@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox css clase 1</title>
+    <style>
+        .container{
+            background-color: #333;
+            height: 30vh;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            /*La propiedad align-items define el comportamiento predeterminado 
+            de cómo se distribuyen los elementos a lo largo del eje transversal 
+            (perpendicular al eje principal).
+            flex-start: el borde del margen de inicio cruzado de los elementos se coloca en la línea de inicio cruzado
+            flex-end: el borde del margen cruzado de los elementos se coloca en la línea cruzada
+            center: los elementos están centrados en el eje transversal
+            baseline: los elementos están alineados, como sus líneas de base se alinean
+            stretch( predeterminado ): estirar para llenar el contenedor (aún respetando el ancho mínimo / ancho máximo)*/
+            align-items: stretch;
+            /*funciona solo cuando es no-wrap porque funciona cuando hay mas de una linea de 'contenido'
+            Ayuda a alinear las líneas de un contenedor flexible dentro de él cuando hay espacio adicional 
+            en el eje transversal, similar a cómo se justify-contentalinean elementos individuales dentro 
+            del eje principal.
+            Tenga en cuenta que esta propiedad no tiene ningún efecto cuando el flexbox tiene solo una línea.
+            flex-start: líneas empaquetadas hasta el inicio del contenedor
+            flex-end: líneas empaquetadas hasta el final del contenedor
+            center: líneas empaquetadas hasta el centro del contenedor
+            space-between: líneas distribuidas uniformemente; la primera línea está al comienzo del contenedor mientras que la última está al final
+            space-around: líneas distribuidas uniformemente con el mismo espacio entre ellas
+            stretch( predeterminado ): las líneas se estiran para ocupar el espacio restante*/
+            align-content: stretch;
+        }
+        .item{
+            border: medium solid #999;
+            
+            width: 20%;
+            background-color: #666;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="container">
+        <article class="item">Flex Item 1</article>
+        <article class="item">Flex Item 2</article>
+        <article class="item">Flex Item 3</article>
+    </section>
+    <section class="container">
+        <article class="item">Flex Item 1</article>
+        <article class="item">Flex Item 2</article>
+        <article class="item">Flex Item 3</article>
+    </section>
+    <section class="container">
+        <article class="item">Flex Item 1</article>
+        <article class="item">Flex Item 2</article>
+        <article class="item">Flex Item 3</article>
+        <article class="item">Flex Item 4</article>
+        <article class="item">Flex Item 5</article>
+        <article class="item">Flex Item 6</article>
+        <article class="item">Flex Item 7</article>
+        <article class="item">Flex Item 8</article>
+        <article class="item">Flex Item 9</article>
+        <article class="item">Flex Item 10</article>
+        <article class="item">Flex Item 11</article>
+        <article class="item">Flex Item 12</article>
+        <article class="item">Flex Item 13</article>
+        <article class="item">Flex Item 14</article>
+        <article class="item">Flex Item 15</article>
+        <article class="item">Flex Item 16</article>
+        <article class="item">Flex Item 17</article>
+        <article class="item">Flex Item 18</article>
+    </section>
+</body>
+</html>
