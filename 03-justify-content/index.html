@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox css clase 1</title>
+    <style>
+        .container{
+            background-color: #333;
+            height: 30vh;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            /*Define la alineación a lo largo del eje principal. Ayuda a distribuir
+             el espacio libre adicional que queda cuando todos los elementos 
+             flexibles de una línea son inflexibles o son flexibles pero han 
+             alcanzado su tamaño máximo.
+             DEPENDIENDO DE SI FLEX DIRECTION ES ROW O CLOMUN VA A VARIAR EL EJE PRINCIPAL
+             *flex-start( predeterminado ): los artículos se empaquetan hacia 
+             la línea de salida
+             *flex-end: los artículos se empaquetan hacia la línea final
+             *center: los elementos están centrados a lo largo de la línea
+             *space-between: los artículos se distribuyen uniformemente en la 
+             línea; el primer elemento está en la línea de inicio, el último 
+             elemento en la línea final
+             *space-around: los elementos se distribuyen uniformemente en la línea con el mismo espacio alrededor
+             *space-evenly: los elementos se distribuyen de modo que el espacio 
+             entre dos sujetos de alineación adyacentes, antes del primer sujeto de 
+             alineación y después del último sujeto de alineación sea el mismo*/
+            justify-content: space-between;
+        }
+        .item{
+            border: medium solid #999;
+            width: 20%;
+            background-color: #666;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <article class="item">Flex Item 1</article>
+        <article class="item">Flex Item 2</article>
+        <article class="item">Flex Item 3</article>
+    </section>
+    <section class="container">
+        <article class="item">Flex Item 1</article>
+        <article class="item">Flex Item 2</article>
+        <article class="item">Flex Item 3</article>
+    </section>
+    <section class="container">
+        <article class="item">Flex Item 1</article>
+        <article class="item">Flex Item 2</article>
+        <article class="item">Flex Item 3</article>
+        <article class="item">Flex Item 4</article>
+        <article class="item">Flex Item 5</article>
+        <article class="item">Flex Item 6</article>
+        <article class="item">Flex Item 7</article>
+        <article class="item">Flex Item 8</article>
+        <article class="item">Flex Item 9</article>
+        <article class="item">Flex Item 10</article>
+        <article class="item">Flex Item 11</article>
+        <article class="item">Flex Item 12</article>
+        <article class="item">Flex Item 13</article>
+        <article class="item">Flex Item 14</article>
+        <article class="item">Flex Item 15</article>
+        <article class="item">Flex Item 16</article>
+        <article class="item">Flex Item 17</article>
+        <article class="item">Flex Item 18</article>
+    </section>
+</body>
+</html>
