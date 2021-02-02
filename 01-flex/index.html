@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox css clase 1</title>
+    <style>
+        .container{
+            background-color: #333;
+            /*la propiedad display flex activa que se alinean de manera horizontal los componentes
+            que estan dentro del container pero si pone otro container igual se comporta como un bloque 
+            uno encima de otro, es decir ocupan todo el ancho de la fila*/
+            /*display: flex;*/
+            /*al colocar inline-display, deams de que los componentes internos se colocan en fila, los
+            demas conatiner que estan al mismo nivel se alinean en linea tambien, es decir solo van a ocupar el 
+            ancho que necesiten en este caso sus tres elementos hijos*/
+            display: inline-flex;
+        }
+        .item{
+            background-color: #666;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <article class="item">Flex Item 1</article>
+        <article class="item">Flex Item 2</article>
+        <article class="item">Flex Item 3</article>
+    </section>
+    <section class="container">
+        <article class="item">Flex Item 1</article>
+        <article class="item">Flex Item 2</article>
+        <article class="item">Flex Item 3</article>
+    </section>
+</body>
+</html>
